@@ -6,7 +6,7 @@ from urllib.parse import urlparse
 from dotenv import load_dotenv
 
 
-def entered_arguments():
+def get_argument():
     parser = argparse.ArgumentParser()
     parser.add_argument('link', help="Link you want to shorten")
     args = parser.parse_args()
@@ -40,7 +40,7 @@ def is_bitlink(headers, url):
 
 def main():
     load_dotenv()
-    url = entered_arguments()
+    url = get_argument()
     secret_token = os.environ['BITLY_TOKEN']
     headers = {"Authorization": f"Bearer {secret_token}"}
     if is_bitlink(headers, url):
