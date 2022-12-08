@@ -9,6 +9,13 @@
  ```bash
  pip install -r requirements.txt
  ```
+ ### Пример использования
+ Если вы хотите использовать этот скрипт, вы должны напечатать следующую команду 
+ в своем терминале
+ ```bash
+    $python main.py  https://dzen.ru
+    Битлинк bit.ly/3VXQbTJ
+```
  ### Как настроить ключи доступа bitly
  * Для изоляции проекта рекомендуется использовать 
  [virtualenv/venv](https://docs.python.org/3/library/venv.html).
